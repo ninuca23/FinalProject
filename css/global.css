@@ -1,0 +1,175 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-image: url(../../images/diego-gutierrez-NRn5rrBnH8w-unsplash\ 1@2x.png);
+  height: 1080px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3098039216);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  position: fixed;
+}
+.navbar .logo {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 28px;
+}
+.navbar .logo img, .navbar .logo p {
+  opacity: 0.7;
+  background: linear-gradient(180deg, rgba(1, 132, 149, 0) 7.41%, #018394 83.33%);
+}
+.navbar p {
+  font-family: "DM Sans", sans-serif;
+  width: 128px;
+  color: #FFFFFF;
+  font-size: 23.961px;
+  font-style: normal;
+  font-weight: 900;
+  margin-right: 68px;
+}
+.navbar ul {
+  display: flex;
+  gap: 50px;
+  margin-top: 8px;
+}
+.navbar a {
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 700;
+}
+.navbar .rightnav {
+  display: flex;
+  margin-top: 38px;
+  gap: 40px;
+}
+
+.indonesia {
+  display: flex;
+  width: 90%;
+}
+.indonesia .redline {
+  width: 4.002px;
+  height: 100px;
+  background: #DD2242;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.45);
+  margin: 149px 203px 0 70px;
+}
+.indonesia .whiteline {
+  width: 2.001px;
+  height: 296px;
+  margin-left: 71px;
+  background: linear-gradient(0deg, #FFF 0%, #FFF 100%), #FFF;
+}
+.indonesia p {
+  color: #FFFFFF;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  width: 17px;
+  transform: rotate(-90deg);
+  margin: 20px 0 0 65px;
+}
+.indonesia .head {
+  width: 627.327px;
+  margin-top: 182px;
+}
+.indonesia h1 {
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 120px;
+  font-weight: 900px;
+  line-height: 130px;
+}
+.indonesia button {
+  background-color: #DD2242;
+  display: flex;
+  height: 82px;
+  width: 271.141px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 211px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  color: #FFF;
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  margin-top: 21px;
+}
+.indonesia button:hover {
+  background-color: #be5466;
+  width: 280px;
+  transition: 0.5s;
+}/*# sourceMappingURL=global.css.map */

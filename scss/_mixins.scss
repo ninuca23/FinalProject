@@ -1,0 +1,37 @@
+@mixin myflex 
+    (
+    $direction:"",
+    $justify: "",
+    $align: "",
+    $wrap: "",
+) 
+{
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+@mixin redbutton {
+    background-color: #DD2242;
+    display: flex;
+    height: 82px;
+    width: 271.141px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 211px;
+    font-family: $dmfont;
+    font-weight: 700;
+    color: #FFF;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+@mixin buttonhover {
+    background-color: #be5466;
+    width:280px;
+    transition: 0.5s;
+}
