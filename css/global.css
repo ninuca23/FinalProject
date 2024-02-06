@@ -76,7 +76,7 @@ a {
 @media (max-width: 1450px) {
   .container {
     width: 100%;
-    height: 1000px;
+    height: 800px;
     background-size: cover;
   }
 }
@@ -135,6 +135,7 @@ a {
 @media (max-width: 1450px) {
   .indonesia .redline {
     margin-top: 100px;
+    height: 100px;
   }
 }
 .indonesia .whiteline {
@@ -142,6 +143,11 @@ a {
   height: 296px;
   margin-left: 71px;
   background: linear-gradient(0deg, #FFF 0%, #FFF 100%), #FFF;
+}
+@media (max-width: 1450px) {
+  .indonesia .whiteline {
+    height: 200px;
+  }
 }
 .indonesia p {
   color: #FFFFFF;
@@ -210,11 +216,18 @@ a {
   height: 210px;
   background-color: #000000;
   opacity: 0.6;
-  margin-top: 348px;
-  margin-left: 20%;
+}
+@media (max-width: 1450px) {
+  .navcontainer {
+    width: 700px;
+    height: 130px;
+    margin: 165px 0 0 290px;
+  }
+}
+.navcontainer .box {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  padding-top: 25px;
 }
 .navcontainer :first-child {
   color: #DD2242;
@@ -232,13 +245,6 @@ a {
     font-size: 14px;
   }
 }
-@media (max-width: 1450px) {
-  .navcontainer {
-    width: 700px;
-    height: 150px;
-    margin-top: 200px;
-  }
-}
 .navcontainer .one,
 .navcontainer .two,
 .navcontainer .three {
@@ -246,6 +252,13 @@ a {
   flex-direction: column;
   width: 200px;
   gap: 10px;
+}
+@media (max-width: 1450px) {
+  .navcontainer .one,
+  .navcontainer .two,
+  .navcontainer .three {
+    width: 150px;
+  }
 }
 .navcontainer h4 {
   font-family: "DM Sans", sans-serif;
