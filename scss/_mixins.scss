@@ -35,3 +35,10 @@
     width:280px;
     transition: 0.5s;
 }
+
+@mixin paragraphs {
+    font-family: $dmfont;
+    font-size: 18px;
+    font-weight: 400;
+    color: #939393;
+}

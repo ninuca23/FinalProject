@@ -1,29 +1,40 @@
 
-header {
+.container {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
     background-image: url(../../images/diego-gutierrez-NRn5rrBnH8w-unsplash\ 1@2x.png);
     height: 1080px;
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
+    background-size:1920px 1080px;
+    background-position: cover;
     background-color: #0000004F;
+    
+
+    @media (max-width:1450px) {
+        width:100%;
+        height: 1000px;
+        background-size: cover;
+    }
 }
 
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        width: 90%;
-        position: fixed;
 
-    .logo {
-        display: flex;
-        margin-top: 40px;
-        margin-left: 28px;
-        
-        img, p {
-            opacity: 0.7;
-            background: linear-gradient(180deg, rgba(1, 132, 149, 0.00) 7.41%, #018394 83.33%);
-        }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    // position: fixed;
+
+.logo {
+    display: flex;
+    margin: 20px 0 0 28px;
+
+    img, p {
+        opacity: 0.7;
+        background: linear-gradient(180deg, rgba(1, 132, 149, 0.00) 7.41%, #018394 83.33%);
     }
+}
 
     p {
         font-family: $dmfont;
@@ -33,6 +44,10 @@ header {
         font-style: normal;
         font-weight: 900;
         margin-right: 68px;
+
+        // @media (max-width:1450px) {
+        //     font-size: 17px;
+        // }
     }
 
     ul {
@@ -47,12 +62,12 @@ header {
         font-size: 18px;
         font-weight: 700;
     }
-
     .rightnav {
         display: flex;
-        margin-top: 38px;
+        margin-top: 18px;
         gap:40px;
     }
+
 
 }
     
@@ -65,10 +80,14 @@ header {
 
     .redline {
         width: 4.002px;
-        height: 100px;
+        height: 149px;
         background: #DD2242;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.45);
-        margin: 149px 203px 0 70px;
+        margin: 100px 203px 0 70px;
+
+        @media (max-width:1450px) {
+            margin-top:100px;
+        }
    }
    
    .whiteline {
@@ -89,17 +108,28 @@ header {
     
 }
 
+
    .head {
        width: 627.327px;
-       margin-top: 182px;
+       margin-top: 195px;
+
+       @media (max-width: 1450px) {
+        margin-top: 100px;
+       }
    }
    
    h1 {
        color: $white;
        font-family: $roboto;
-       font-size: 120px;
+       font-size: 120px; 
        font-weight: 900px;
        line-height: 130px;
+
+       @media (max-width:1450px) {
+        font-size: 80px;
+        line-height: 100px;
+       }
+
    }
     
    button {
@@ -107,12 +137,75 @@ header {
     font-size: 20px;
     letter-spacing: 0.1em;
     margin-top: 21px;
+
+    @media (max-width:1450px) {
+        width:250px;
+        padding: 2px;
+       }
    }
    
    button:hover {
     @include buttonhover;
    }
 }
+
+.navcontainer {
+    width:1225px;
+    height:210px;
+    background-color: #000000;
+    opacity: 0.6;
+    margin-top: 348px;
+    margin-left: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    :first-child {
+        color: #DD2242;
+        font-size: 14px;
+        font-family: $roboto;
+    }
+
+    :last-child {
+        @include paragraphs;
+
+        @media (max-width:1450px) {
+            font-size:14px;
+        }
+    }
+
+
+    @media (max-width:1450px) {
+        width: 700px;
+        height: 150px;
+        margin-top: 200px;
+    }
+    
+
+        .one,
+        .two,
+        .three {
+            display: flex;
+            flex-direction: column;
+            width:200px;
+            gap: 10px;
+        }
+
+        h4 {
+            font-family: $dmfont;
+            font-size: 26px;
+            font-weight: 700;
+            color:$white;
+
+            @media (max-width:1450px) {
+                font-size:20px;
+            }
+        }
+
+    }
+
+
+
 
 
 

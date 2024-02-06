@@ -62,25 +62,34 @@ a {
   text-decoration: none;
 }
 
-header {
-  background-image: url(../images/diego-gutierrez-NRn5rrBnH8w-unsplash\ 1@2x.png);
+.container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url(../../images/diego-gutierrez-NRn5rrBnH8w-unsplash\ 1@2x.png);
   height: 1080px;
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
+  background-size: 1920px 1080px;
+  background-position: cover;
   background-color: rgba(0, 0, 0, 0.3098039216);
+}
+@media (max-width: 1450px) {
+  .container {
+    width: 100%;
+    height: 1000px;
+    background-size: cover;
+  }
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  width: 90%;
-  position: fixed;
+  align-items: center;
+  width: 95%;
 }
 .navbar .logo {
   display: flex;
-  margin-top: 40px;
-  margin-left: 28px;
+  margin: 20px 0 0 28px;
 }
 .navbar .logo img, .navbar .logo p {
   opacity: 0.7;
@@ -108,7 +117,7 @@ header {
 }
 .navbar .rightnav {
   display: flex;
-  margin-top: 38px;
+  margin-top: 18px;
   gap: 40px;
 }
 
@@ -118,10 +127,15 @@ header {
 }
 .indonesia .redline {
   width: 4.002px;
-  height: 100px;
+  height: 149px;
   background: #DD2242;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.45);
-  margin: 149px 203px 0 70px;
+  margin: 100px 203px 0 70px;
+}
+@media (max-width: 1450px) {
+  .indonesia .redline {
+    margin-top: 100px;
+  }
 }
 .indonesia .whiteline {
   width: 2.001px;
@@ -140,7 +154,12 @@ header {
 }
 .indonesia .head {
   width: 627.327px;
-  margin-top: 182px;
+  margin-top: 195px;
+}
+@media (max-width: 1450px) {
+  .indonesia .head {
+    margin-top: 100px;
+  }
 }
 .indonesia h1 {
   color: #FFFFFF;
@@ -148,6 +167,12 @@ header {
   font-size: 120px;
   font-weight: 900px;
   line-height: 130px;
+}
+@media (max-width: 1450px) {
+  .indonesia h1 {
+    font-size: 80px;
+    line-height: 100px;
+  }
 }
 .indonesia button {
   background-color: #DD2242;
@@ -168,8 +193,68 @@ header {
   letter-spacing: 0.1em;
   margin-top: 21px;
 }
+@media (max-width: 1450px) {
+  .indonesia button {
+    width: 250px;
+    padding: 2px;
+  }
+}
 .indonesia button:hover {
   background-color: #be5466;
   width: 280px;
   transition: 0.5s;
+}
+
+.navcontainer {
+  width: 1225px;
+  height: 210px;
+  background-color: #000000;
+  opacity: 0.6;
+  margin-top: 348px;
+  margin-left: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navcontainer :first-child {
+  color: #DD2242;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+.navcontainer :last-child {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #939393;
+}
+@media (max-width: 1450px) {
+  .navcontainer :last-child {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1450px) {
+  .navcontainer {
+    width: 700px;
+    height: 150px;
+    margin-top: 200px;
+  }
+}
+.navcontainer .one,
+.navcontainer .two,
+.navcontainer .three {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  gap: 10px;
+}
+.navcontainer h4 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+@media (max-width: 1450px) {
+  .navcontainer h4 {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=global.css.map */
