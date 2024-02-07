@@ -3,19 +3,20 @@
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
+
     background-image: url(../../images/diego-gutierrez-NRn5rrBnH8w-unsplash\ 1@2x.png);
     height: 1080px;
     background-repeat: no-repeat;
     background-size:1920px 1080px;
     background-position: cover;
     background-color: #0000004F;
-    
 
     @media (max-width:1450px) {
         width:100%;
         height: 800px;
         background-size: cover;
     }
+    
 }
 
 
@@ -23,12 +24,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 95%;
+    width: 90%;
     // position: fixed;
+
+   
 
 .logo {
     display: flex;
     margin: 20px 0 0 28px;
+
 
     img, p {
         opacity: 0.7;
@@ -44,16 +48,13 @@
         font-style: normal;
         font-weight: 900;
         margin-right: 68px;
-
-        // @media (max-width:1450px) {
-        //     font-size: 17px;
-        // }
     }
 
     ul {
         display: flex;
         gap:50px;
         margin-top: 8px;
+
     }
 
     a {
@@ -68,7 +69,6 @@
         gap:40px;
     }
 
-
 }
     
 
@@ -76,7 +76,6 @@
 .indonesia {
     display: flex;
     width: 90%;
-
  
     .redline {
         width: 4.002px;
@@ -119,8 +118,9 @@
        margin-top: 195px;
 
        @media (max-width: 1450px) {
-        margin-top: 100px;
+        margin-top: 45px;
        }
+
    }
    
    h1 {
@@ -154,24 +154,62 @@
    }
 }
 
+
 .navcontainer {
-    width:1225px;
-    height:210px;
-    background-color: #000000;
-    opacity: 0.6;
-
-    @media (max-width:1450px) {
-        width: 700px;
-        height: 130px;
-        margin: 165px 0 0 290px;
-    }
-
+    display: flex;
+    margin-top: 220px;
+    padding-left: 50px;
    
 
+    @media (max-width:1450px) {
+        margin-top: 65px;
+        padding-top: 0px;
+    }
+
+
+    .lefttext {
+           display: flex;
+           flex-direction: column;
+           gap: 40px; 
+           margin-top: 40px;
+           margin-right: 200px;
+
+           @media (max-width:1450px) {
+             margin-top: 100px;
+        } 
+
+
+        p {
+            color: #FFF;
+            transform: rotate(-90deg);
+            font-family: $dmfont;
+            font-size: 16px;
+            font-weight: 700;  
+
+            @media (max-width:1450px) {
+                font-size: 10px;
+            }   
+        }
+    }
+  
     .box {
         display: flex;
+        gap: 100px;
+        width:1225px;
+        height:210px;
+        background-color: #000000;
+        opacity: 0.6;
+        // margin: 220px 0 0 191px;
+        display: flex;
+        align-items: center;
         justify-content: space-around;
-        padding-top: 25px;
+
+          @media (max-width:1450px) {
+        width: 1000px;
+        height: 150px;
+        margin: 80px 0 0 0;
+    }
+
     }
 
     :first-child {
@@ -197,8 +235,9 @@
             gap: 10px;
 
             @media (max-width:1450px) {
-                width: 150px;
+                width: 180px;
             }
+
         }
 
         h4 {
@@ -212,12 +251,13 @@
             }
         }
 
+        video {
+            @media (max-width:1450px) {
+                width:200px;
+                height: 190px;
+                margin-top: 40px;
+                text-decoration: none;
+        }
+
     }
-
-
-
-
-
-
-
-
+}

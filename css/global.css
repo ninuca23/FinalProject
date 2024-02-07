@@ -66,7 +66,7 @@ a {
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
-  background-image: url(../images/diego-gutierrez-NRn5rrBnH8w-unsplash\ 1@2x.png);
+  background-image: url(../../images/diego-gutierrez-NRn5rrBnH8w-unsplash\ 1@2x.png);
   height: 1080px;
   background-repeat: no-repeat;
   background-size: 1920px 1080px;
@@ -85,7 +85,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 95%;
+  width: 90%;
 }
 .navbar .logo {
   display: flex;
@@ -164,7 +164,7 @@ a {
 }
 @media (max-width: 1450px) {
   .indonesia .head {
-    margin-top: 100px;
+    margin-top: 45px;
   }
 }
 .indonesia h1 {
@@ -212,22 +212,57 @@ a {
 }
 
 .navcontainer {
-  width: 1225px;
-  height: 210px;
-  background-color: #000000;
-  opacity: 0.6;
+  display: flex;
+  margin-top: 220px;
+  padding-left: 50px;
 }
 @media (max-width: 1450px) {
   .navcontainer {
-    width: 700px;
-    height: 130px;
-    margin: 165px 0 0 290px;
+    margin-top: 65px;
+    padding-top: 0px;
+  }
+}
+.navcontainer .lefttext {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+  margin-right: 200px;
+}
+@media (max-width: 1450px) {
+  .navcontainer .lefttext {
+    margin-top: 100px;
+  }
+}
+.navcontainer .lefttext p {
+  color: #FFF;
+  transform: rotate(-90deg);
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+@media (max-width: 1450px) {
+  .navcontainer .lefttext p {
+    font-size: 10px;
   }
 }
 .navcontainer .box {
   display: flex;
+  gap: 100px;
+  width: 1225px;
+  height: 210px;
+  background-color: #000000;
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
   justify-content: space-around;
-  padding-top: 25px;
+}
+@media (max-width: 1450px) {
+  .navcontainer .box {
+    width: 1000px;
+    height: 150px;
+    margin: 80px 0 0 0;
+  }
 }
 .navcontainer :first-child {
   color: #DD2242;
@@ -257,7 +292,7 @@ a {
   .navcontainer .one,
   .navcontainer .two,
   .navcontainer .three {
-    width: 150px;
+    width: 180px;
   }
 }
 .navcontainer h4 {
@@ -269,5 +304,13 @@ a {
 @media (max-width: 1450px) {
   .navcontainer h4 {
     font-size: 20px;
+  }
+}
+@media (max-width: 1450px) {
+  .navcontainer video {
+    width: 200px;
+    height: 190px;
+    margin-top: 40px;
+    text-decoration: none;
   }
 }/*# sourceMappingURL=global.css.map */
