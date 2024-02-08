@@ -250,6 +250,15 @@ header{
             align-items: center
         }
 
+          iframe {
+            @media (max-width:900px) {
+                width:400px;
+            }
+
+            @media (max-width:400px){
+                width:90%;
+            }
+
     }
 
     .lefttext {
