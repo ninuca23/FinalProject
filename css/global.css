@@ -75,7 +75,7 @@ a {
 
 header {
   background-color: rgba(0, 0, 0, 0.3098039216);
-  background-image: url(../images/diego-gutierrez-NRn5rrBnH8w-unsplash\ 1@2x.png);
+  background-image: url(../../images/diego-gutierrez-NRn5rrBnH8w-unsplash\ 1@2x.png);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -193,6 +193,11 @@ header {
   margin: 149px 0 0 50px;
   gap: 193px;
 }
+@media (max-width: 900px) {
+  .headercontainer .indonesia {
+    justify-content: center;
+  }
+}
 @media (max-width: 500px) {
   .headercontainer .indonesia {
     margin-left: 30px;
@@ -219,10 +224,20 @@ header {
   background: #DD2242;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.45);
 }
+@media (max-width: 1000px) {
+  .headercontainer .indonesia .line .redline {
+    display: none;
+  }
+}
 .headercontainer .indonesia .line .whiteline {
   height: 200px;
   width: 2px;
   background: linear-gradient(0deg, #FFF 0%, #FFF 100%), #FFF;
+}
+@media (max-width: 1000px) {
+  .headercontainer .indonesia .line .whiteline {
+    display: none;
+  }
 }
 .headercontainer .indonesia .line p {
   transform: rotate(-90deg);
@@ -232,6 +247,11 @@ header {
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
 }
+@media (max-width: 1000px) {
+  .headercontainer .indonesia .line p {
+    display: none;
+  }
+}
 .headercontainer .indonesia .head {
   width: 500px;
   color: #FFF;
@@ -239,14 +259,21 @@ header {
   font-size: 70px;
   line-height: 90px;
 }
-@media (max-width: 390px) {
+@media (max-width: 900px) {
+  .headercontainer .indonesia .head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
   .headercontainer .indonesia .head {
     width: 300px;
     font-size: 50px;
     line-height: 50px;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .headercontainer .indonesia .head {
     width: 250px;
     font-size: 40px;
@@ -273,37 +300,57 @@ header {
   height: 70px;
   width: 200px;
 }
-@media (max-width: 390px) {
+@media (max-width: 900px) {
   .headercontainer .indonesia .head button {
-    width: 300px;
+    width: 500px;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 600px) {
+  .headercontainer .indonesia .head button {
+    width: 400px;
+  }
+}
+@media (max-width: 450px) {
+  .headercontainer .indonesia .head button {
+    width: 250px;
+  }
+}
+@media (max-width: 350px) {
   .headercontainer .indonesia .head button {
     width: 200px;
   }
 }
 .headercontainer .indonesia .head button:hover {
   background-color: #be5466;
-  width: 280px;
   transition: 0.5s;
-  font-size: 20px;
 }
-.headercontainer .bottombox {
+@media (max-width: 900px) {
+  .headercontainer .indonesia .head button:hover {
+    background-color: #DD2242;
+  }
+}
+@media (max-width: 600px) {
+  .headercontainer .indonesia .head button:hover {
+    background-color: #DD2242;
+  }
+}
+
+.bottombox {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 210px;
   border: 2px red solid;
 }
-@media (max-width: 800px) {
-  .headercontainer .bottombox {
+@media (max-width: 900px) {
+  .bottombox {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-.headercontainer .lefttext {
+
+.lefttext {
   display: flex;
   color: #FFF;
   height: 21px;
@@ -311,12 +358,13 @@ header {
   gap: 20px;
   margin-top: 70px;
 }
-@media (max-width: 950px) {
-  .headercontainer .lefttext {
+@media (max-width: 1000px) {
+  .lefttext {
     display: none;
   }
 }
-.headercontainer .box {
+
+.box {
   width: 900px;
   height: 150px;
   background-color: black;
@@ -325,62 +373,54 @@ header {
   justify-content: space-around;
   align-items: center;
 }
-@media (max-width: 1000px) {
-  .headercontainer .box {
-    width: 100%;
-  }
-}
-@media (max-width: 1000px) and (max-width: 800px) {
-  .headercontainer .box {
+@media (max-width: 900px) {
+  .box {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 400px;
     height: 400px;
     gap: 30px;
   }
 }
-.headercontainer .box .one,
-.headercontainer .box .two,
-.headercontainer .box .three {
+@media (max-width: 600px) {
+  .box {
+    width: 90%;
+  }
+}
+.box .one,
+.box .two,
+.box .three {
   width: 200px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.headercontainer .box :first-child {
+.box :first-child {
   color: #DD2242;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
 }
-.headercontainer .box :last-child {
+.box :last-child {
   font-family: "DM Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
   color: #E0E0E0;
 }
-.headercontainer .box h4 {
+.box h4 {
   font-family: "DM Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   color: #FFFFFF;
 }
-@media (max-width: 1450px) {
-  .headercontainer .box h4 {
-    font-size: 20px;
-  }
-}
-@media (max-width: 1450px) {
-  .headercontainer .box video {
-    width: 200px;
-    height: 150px;
-    margin-top: 40px;
-    text-decoration: none;
+@media (max-width: 900px) {
+  .box iframe {
+    width: 90%;
   }
 }
 
 .s-1 {
-  background-image: url(../images/section\ 2.png);
+  background-image: url(../../images/section\ 2.png);
   height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -442,12 +482,11 @@ button {
 
 button:hover {
   background-color: #be5466;
-  width: 280px;
   transition: 0.5s;
 }
 
 .s-2 {
-  background-image: url(../images/section\ 3.png);
+  background-image: url(../../images/section\ 3.png);
   height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -506,12 +545,11 @@ button {
 
 button:hover {
   background-color: #be5466;
-  width: 280px;
   transition: 0.5s;
 }
 
 .s-3 {
-  background-image: url(../images/ifan-bima-B04Xpnu5JQ4-unsplash\ 1.png);
+  background-image: url(../../images/ifan-bima-B04Xpnu5JQ4-unsplash\ 1.png);
   height: 1000px;
   background-size: cover;
   background-position: center;
