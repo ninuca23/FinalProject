@@ -250,7 +250,7 @@ header{
             align-items: center
         }
 
-          iframe {
+        iframe {
             @media (max-width:900px) {
                 width:400px;
             }
@@ -321,11 +321,7 @@ header{
             font-size: 20px;
             font-weight: 700;
             color:$white;
-        }
 
-    iframe {
-        @media (max-width:900px) {
-            width:90%;
-        }
     }
     }
+}
