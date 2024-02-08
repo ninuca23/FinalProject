@@ -1,263 +1,278 @@
 
-.container {
-    max-width: 1920px;
-    width: 100%;
-    margin: 0 auto;
-
-    background-image: url(../../images/diego-gutierrez-NRn5rrBnH8w-unsplash\ 1@2x.png);
-    height: 1080px;
-    background-repeat: no-repeat;
-    background-size:1920px 1080px;
-    background-position: cover;
+header{
     background-color: #0000004F;
-
-    @media (max-width:1450px) {
-        width:100%;
-        height: 800px;
+    background-image: url(../../images/diego-gutierrez-NRn5rrBnH8w-unsplash\ 1@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    
+   
+    @media (max-width:1400px) {
         background-size: cover;
     }
-    
-}
 
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    // position: fixed;
-
-   
-
-.logo {
-    display: flex;
-    margin: 20px 0 0 28px;
-
-
-    img, p {
-        opacity: 0.7;
-        background: linear-gradient(180deg, rgba(1, 132, 149, 0.00) 7.41%, #018394 83.33%);
+    @media (max-width:900px) {
+        background-size: cover;
+        background-position: center;
     }
 }
 
-    p {
-        font-family: $dmfont;
-        width: 128px;
-        color: $white;
-        font-size: 23.961px;
-        font-style: normal;
-        font-weight: 900;
-        margin-right: 68px;
+.headercontainer {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto; 
+
+    @media (max-width:800px) {
+       width:99%;
     }
 
-    ul {
-        display: flex;
-        gap:50px;
-        margin-top: 8px;
+    @media (max-width:390px) {
+        width:99%;
+     }
 
-    }
-
-    a {
-        font-family: $roboto;
-        color:$white;
-        font-size: 18px;
-        font-weight: 700;
-    }
-    .rightnav {
-        display: flex;
-        margin-top: 18px;
-        gap:40px;
-    }
-
-}
+     @media (max-width:300px) {
+        width:99%;
+     }
     
 
-//  EXPLORE INDONESIA
-.indonesia {
-    display: flex;
-    width: 90%;
- 
-    .redline {
-        width: 4.002px;
-        height: 149px;
-        background: #DD2242;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.45);
-        margin: 100px 203px 0 70px;
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        // position: fixed;   
+        
+    
+    .logo {
+        display: flex;
+        padding: 28px 0 0 28px;
 
-        @media (max-width:1450px) {
-            margin-top:100px;
-            height: 100px;
+        @media (max-width:300px) {
+            padding-left:0px;
+           }
+
+           @media (max-width:1050px) {
+            padding-left:10px;
+           }
+      
+        img,p {
+            opacity: 0.7;
+            background: linear-gradient(180deg, rgba(1, 132, 149, 0.00) 7.41%, #018394 83.33%);
+
+            @media (max-width:300px) {
+               background: none;
+              }
         }
-   }
-   
-   .whiteline {
-       width: 2.001px;
-       height: 296px;
-       margin-left: 71px;
-       background: linear-gradient(0deg, #FFF 0%, #FFF 100%), #FFF;
-
-       @media (max-width: 1450px) {
-        height: 200px;
-       }
-   }  
-
-   p {
-    color:$white;
-    font-family: $dmfont;
-    font-size: 16px;
-    font-weight: 700;
-    width: 17px;
-    transform: rotate(-90deg);
-    margin: 20px 0 0 65px;
+    }
     
-}
+        p {
+            font-family: $dmfont;
+            width: 123px;
+            color: $white;
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 900;
+            margin-right: 68px;
 
-
-   .head {
-       width: 627.327px;
-       margin-top: 195px;
-
-       @media (max-width: 1450px) {
-        margin-top: 45px;
-       }
-
-   }
-   
-   h1 {
-       color: $white;
-       font-family: $roboto;
-       font-size: 120px; 
-       font-weight: 900px;
-       line-height: 130px;
-
-       @media (max-width:1450px) {
-        font-size: 80px;
-        line-height: 100px;
-       }
-
-   }
+            @media (max-width:300px) {
+               width:80px;
+               font-size: 20px;
+               margin-right: 10px;
+             }
+        }
     
-   button {
-    @include redbutton;
-    font-size: 20px;
-    letter-spacing: 0.1em;
-    margin-top: 21px;
+        ul {
+            display: flex;
+            gap:50px;
+            margin-top: 8px;
 
-    @media (max-width:1450px) {
-        width:250px;
-        padding: 2px;
-       }
-   }
-   
-   button:hover {
-    @include buttonhover;
-   }
-}
+            @media (max-width:950px) {
+                display: none;
+            }
+    
+        }
+    
+        a {
+            font-family: $roboto;
+            color:$white;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .rightnav {
+            display: flex;
+            margin-top: 18px;
+            gap:40px;
 
+            @media (max-width:800px) {
+                gap:20px;
+               }
 
-.navcontainer {
-    display: flex;
-    margin-top: 220px;
-    padding-left: 50px;
-   
+            @media (max-width:300px) {
+                gap:20px;
+               }
+        }
+    }  
+    
+    .indonesia {
+        display: flex;
+        margin: 149px 0 0 50px;
+        gap: 193px;
 
-    @media (max-width:1450px) {
-        margin-top: 65px;
-        padding-top: 0px;
+        @media (max-width:500px) {
+            margin-left: 30px; 
+         }
+
+        @media (max-width:390px) {
+            margin-left: 30px; 
+         }
+
+        .line {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media (max-width:950px) {
+                display: none;
+            }
+
+            .redline {
+                height: 70px;
+                width: 4px;
+                background: #DD2242;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.45);
+            }
+
+            .whiteline {
+                height: 200px;
+                width: 2px;
+                background: linear-gradient(0deg, #FFF 0%, #FFF 100%), #FFF;
+            }
+
+            p {
+                transform: rotate(-90deg);
+                font-family:$dmfont ;
+                color: #FFF;
+                font-weight: 700;
+                text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.10);
+                margin-top: 20px;
+            }
+        }
+        .head {
+            width: 500px;
+            color: #FFF;
+            font-family: $roboto;
+            font-size: 70px;
+            line-height: 90px; 
+
+            @media (max-width:390px) {
+                width: 300px;
+                font-size: 50px;
+                line-height: 50px; 
+             }
+
+             @media (max-width:300px) {
+                width: 250px;
+                font-size: 40px;
+               }
+
+            button {
+                @include redbutton;
+                letter-spacing: 0.1em;
+                font-size: 15px;
+                margin-top: 40px;
+                height: 70px;
+                width: 200px;
+
+                @media (max-width:390px) {
+                    width: 300px; 
+                 }
+
+                 @media (max-width:300px) {
+                    width: 200px;
+                   }
+            }
+            button:hover {
+                @include buttonhover;
+                font-size: 20px;
+             }
+        }
     }
 
+    .bottombox {
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 210px;
+        border: 2px red solid;
+
+
+        @media (max-width:800px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center
+        }
+
+    }
 
     .lefttext {
-           display: flex;
-           flex-direction: column;
-           gap: 40px; 
-           margin-top: 40px;
-           margin-right: 200px;
+        display: flex;
+        color: #FFF;
+        height: 21px;
+        transform: rotate(-90deg);
+        gap: 20px;
+        margin-top: 70px;
 
-           @media (max-width:1450px) {
-             margin-top: 100px;
-        } 
-
-
-        p {
-            color: #FFF;
-            transform: rotate(-90deg);
-            font-family: $dmfont;
-            font-size: 16px;
-            font-weight: 700;  
-
-            @media (max-width:1450px) {
-                font-size: 10px;
-            }   
+        @media (max-width:950px) {
+            display: none;
         }
     }
-  
+
     .box {
-        display: flex;
-        gap: 100px;
-        width:1225px;
-        height:210px;
-        background-color: #000000;
-        opacity: 0.6;
-        // margin: 220px 0 0 191px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-
-          @media (max-width:1450px) {
-        width: 1000px;
+        width: 900px;
         height: 150px;
-        margin: 80px 0 0 0;
-    }
+        background-color: black;
+        opacity: 0.6;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
 
-    }
+        @media (max-width:1000px) {
+            width: 100%;
 
-    :first-child {
-        color: #DD2242;
-        font-size: 14px;
-        font-family: $roboto;
-    }
-
-    :last-child {
-        @include paragraphs;
-
-        @media (max-width:1450px) {
-            font-size:14px;
+         @media (max-width:800px) {
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            height: 400px;
+            gap: 30px;
         }
-    }
     
+        }
+
         .one,
         .two,
         .three {
+            width:200px;
             display: flex;
             flex-direction: column;
-            width:200px;
             gap: 10px;
-
-            @media (max-width:1450px) {
-                width: 180px;
-            }
-
         }
+         
+        :first-child {
+            color: #DD2242;
+            font-size: 14px;
+            font-family: $roboto;
+           }
+            
+       :last-child {
+             @include paragraphs;
+       }
 
         h4 {
             font-family: $dmfont;
-            font-size: 26px;
+            font-size: 20px;
             font-weight: 700;
             color:$white;
-
-            @media (max-width:1450px) {
-                font-size:20px;
-            }
         }
-
-        video {
-            @media (max-width:1450px) {
-                width:200px;
-                height: 190px;
-                margin-top: 40px;
-                text-decoration: none;
-        }
-
     }
 }
