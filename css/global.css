@@ -380,7 +380,7 @@ header {
 }
 
 .s-1 {
-  background-image: url(../../images/section\ 2.png);
+  background-image: url(../images/section\ 2.png);
   height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -447,7 +447,7 @@ button:hover {
 }
 
 .s-2 {
-  background-image: url(../../images/section\ 3.png);
+  background-image: url(../images/section\ 3.png);
   height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -511,7 +511,7 @@ button:hover {
 }
 
 .s-3 {
-  background-image: url(../../images/ifan-bima-B04Xpnu5JQ4-unsplash\ 1.png);
+  background-image: url(../images/ifan-bima-B04Xpnu5JQ4-unsplash\ 1.png);
   height: 1000px;
   background-size: cover;
   background-position: center;
