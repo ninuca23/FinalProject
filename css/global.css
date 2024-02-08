@@ -75,7 +75,7 @@ a {
 
 header {
   background-color: rgba(0, 0, 0, 0.3098039216);
-  background-image: url(../../images/diego-gutierrez-NRn5rrBnH8w-unsplash\ 1@2x.png);
+  background-image: url(../images/diego-gutierrez-NRn5rrBnH8w-unsplash\ 1@2x.png);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -364,6 +364,19 @@ header {
   font-size: 20px;
   font-weight: 700;
   color: #FFFFFF;
+}
+@media (max-width: 1450px) {
+  .headercontainer .box h4 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1450px) {
+  .headercontainer .box video {
+    width: 200px;
+    height: 150px;
+    margin-top: 40px;
+    text-decoration: none;
+  }
 }
 
 .s-1 {
