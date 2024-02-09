@@ -1,220 +1,70 @@
 .s-3 {
-    background-image: url(../../images/ifan-bima-B04Xpnu5JQ4-unsplash\ 1.png);
-    height: 1500px;
-    background-size: cover;
-    background-position: center;
+  background-image: url(../../images/ifan-bima-B04Xpnu5JQ4-unsplash\ 1.png);
+  height: 1500px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 
-    @media (max-width:600px) {
-        background-position: center;
-        background-size: cover;
-        height: 2500px;
+  // @media (max-width:600px) {
+  //     background-position: center;
+  //     background-size: cover;
+  //     height: 2500px;
+  // }
+
+  // @media (max-width:600px) {
+  //     background-position: center;
+  //     background-size: cover;
+  //     height: 2570px;
+  // }
+
+  .container {
+    @extend %maincontainer;
+
+    @media (max-width: 1000px) {
+      width: 90%;
     }
 
-    @media (max-width:600px) {
-        background-position: center;
-        background-size: cover;
-        height: 2570px;
+    h1 {
+      font-family: $dmfont;
+      font-weight: 700;
+      font-size: 40px;
+      color: #010a20;
+      text-align: center;
+      padding: 80px 0 44px;
+
+      @media (max-width: 600px) {
+        width: 90%;
+      }
     }
 
-    .container {
-        @extend %maincontainer; 
-    
-        @media (max-width:1000px) {
-            width: 90%;
-          }
-    
-    
-       .content {
-
-        display: flex;
-        flex-direction: column;
-    
-        h1 {
-            height: 40px;
-            font-family: $dmfont;
-            font-weight: 700;
-            font-size: 40px;
-            color: #010A20;
-            text-align: center;
-            margin: 100px 0 44px;
-    
-            @media (max-width:600px) {
-                width: 90%;
-            }
-        }
-    
-        img {
-            width: 200px;
-        }
-    
-        .slidephoto {
-            display: flex;
-            justify-content: center;
-            gap:31px;
-    
-            @media (max-width:900px) {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-        
-        .slide {
-            display: flex;
-            justify-content: center;
-            margin-top: 28px;
-    
-            @media (max-width:600px) {
-                width: 100%;
-            }
-        }
-    
-       }
+    img {
+      width: 200px;
     }
-}
 
+    .slidephoto {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 31px;
+    }
 
-    .blackbox {
-        height: 500px;
+    .slide {
+      display: flex;
+      justify-content: center;
+      margin-top: 28px;
+
+      @media (max-width: 600px) {
         width: 100%;
-        background-color: black;
-        opacity: 90%;
-        margin-top: 640px;
-        display: flex;
-
-        @media (max-width:900px) {
-            height: 600px;
-            margin-top: 200px;
-
-        }
-
-        @media (max-width:600px) {
-            height: 800px;
-            margin-top: 1080px;
-        }
-
-        @media (max-width:600px) {
-            height: 1080px;
-            margin-top: 1080px;
-        }
-
-        @media (max-width:450px) {
-            height: 1050px;
-            margin-top: 830px;
-
-        }
-
-        @media (max-width:400px) {
-            height: 1100px;
-            margin-top: 770px;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            border: 1px solid red;
-
-            @media (max-width:1000px) {
-                width: 90%;
-              }
-
-            .numbers {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap:20px; 
-
-                h1 {
-                    font-family: $dmfont;
-                    color: $white;
-                    font-size: 40px;
-                    font-weight: 700px;
-                    text-align: center;
-
-                    @media (max-width:700px) {
-                        font-size: 30px;
-                      }
-
-                      @media (max-width:400px) {
-                        font-size: 20px;
-                      }
-                }
-
-                p {
-                    width:450px;
-                    text-align: center;
-                    @include paragraphs;
-
-                    @media (max-width:700px) {
-                        width: 300px;
-                    }
-
-                    @media (max-width:400px) {
-                        width: 200px;
-                    }
-                }
-
-
-            }
-
-            .numbercard {
-                width: 100%;
-                display: flex;
-                justify-content: space-around;
-                    
-         
-                 @media (max-width:800px) {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                }
-        
-                @media (max-width:600px) {
-                    width:90%;
-                }
-        
-        
-                .one,
-                .three {
-                    width:300px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    gap: 10px;
-
-                    @media (max-width:500px) {
-                        width: 150px;
-                      }
-                }
-        
-                .two {
-                    width:370px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    gap: 10px;
-
-                    @media (max-width:500px) {
-                        width: 150px;
-                      }
-                }
-                 
-                :first-child {
-                    color: #DD2242;
-                    font-size: 30px;
-                    font-family: $roboto;
-                   }
-                    
-               :last-child {
-                     @include paragraphs;
-                     text-align: center;
-               }
-            }
-        }
+      }
     }
-    
+  }
 
-
-  
-
-   
+  .blackbox {
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    opacity: 90%;
+    position: absolute;
+    bottom: 0;
+  }
+}
