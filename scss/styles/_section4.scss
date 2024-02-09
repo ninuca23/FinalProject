@@ -1,0 +1,12 @@
+.s-4 {
+    background-image:url(../../images/section4.png);
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .container {
+        @extend %maincontainer;
+        border: 1px solid black;
+    }
+}
