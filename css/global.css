@@ -650,6 +650,13 @@ header {
   background-position: center;
   position: relative;
 }
+@media (max-width: 900px) {
+  .s-3 {
+    background-position: center;
+    background-size: cover;
+    height: 2000px;
+  }
+}
 @media (max-width: 1000px) {
   .s-3 .container {
     width: 90%;
@@ -687,13 +694,83 @@ header {
     width: 100%;
   }
 }
-.s-3 .blackbox {
+
+.blackbox {
   height: 400px;
   width: 100%;
   background-color: black;
   opacity: 90%;
   position: absolute;
   bottom: 0;
+}
+@media (max-width: 900px) {
+  .blackbox {
+    height: 600px;
+  }
+}
+@media (max-width: 600px) {
+  .blackbox {
+    height: 800px;
+  }
+}
+.blackbox .numbers {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.blackbox .numbers h1 {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-family: "DM Sans", sans-serif;
+}
+@media (max-width: 600px) {
+  .blackbox .numbers h1 {
+    width: 80%;
+    font-size: 30px;
+  }
+}
+.blackbox .numbers p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #E0E0E0;
+  width: 430px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .blackbox .numbers p {
+    width: 200px;
+  }
+}
+.blackbox .numbercard {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.blackbox .numbercard .one,
+.blackbox .numbercard .two,
+.blackbox .numbercard .three {
+  margin-top: 50px;
+  width: 300px;
+}
+.blackbox .numbercard :first-child {
+  color: red;
+  font-family: "DM Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+.blackbox .numbercard :last-child {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #E0E0E0;
+  text-align: center;
 }
 
 .s-4 {

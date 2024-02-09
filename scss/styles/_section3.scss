@@ -5,11 +5,11 @@
   background-position: center;
   position: relative;
 
-  // @media (max-width:600px) {
-  //     background-position: center;
-  //     background-size: cover;
-  //     height: 2500px;
-  // }
+  @media (max-width: 900px) {
+    background-position: center;
+    background-size: cover;
+    height: 2000px;
+  }
 
   // @media (max-width:600px) {
   //     background-position: center;
@@ -58,13 +58,72 @@
       }
     }
   }
+}
 
-  .blackbox {
-    height: 400px;
-    width: 100%;
-    background-color: black;
-    opacity: 90%;
-    position: absolute;
-    bottom: 0;
+.blackbox {
+  height: 400px;
+  width: 100%;
+  background-color: black;
+  opacity: 90%;
+  position: absolute;
+  bottom: 0;
+  @media (max-width: 900px) {
+    height: 600px;
+  }
+
+  @media (max-width: 600px) {
+    height: 800px;
+  }
+
+  .numbers {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    h1 {
+      color: white;
+      text-align: center;
+      font-size: 40px;
+      font-family: $dmfont;
+      @media (max-width: 600px) {
+        width: 80%;
+        font-size: 30px;
+      }
+    }
+    p {
+      @include paragraphs;
+      width: 430px;
+      text-align: center;
+
+      @media (max-width: 600px) {
+        width: 200px;
+      }
+    }
+  }
+
+  .numbercard {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .one,
+    .two,
+    .three {
+      margin-top: 50px;
+      width: 300px;
+    }
+    :first-child {
+      color: red;
+      font-family: $dmfont;
+      font-size: 30px;
+      font-weight: 700;
+      text-align: center;
+    }
+    :last-child {
+      @include paragraphs;
+      text-align: center;
+    }
   }
 }
