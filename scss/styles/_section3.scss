@@ -1,5 +1,5 @@
 .s-3 {
-  background-image: url(../../images/ifan-bima-B04Xpnu5JQ4-unsplash\ 1.png);
+  background-image: url(../images/ifan-bima-B04Xpnu5JQ4-unsplash\ 1.png);
   height: 1500px;
   background-size: cover;
   background-position: center;
@@ -68,11 +68,11 @@
   position: absolute;
   bottom: 0;
   @media (max-width: 900px) {
-    height: 600px;
+    height: 800px;
   }
 
-  @media (max-width: 600px) {
-    height: 800px;
+  @media (max-width: 400px) {
+    height: 1000px;
   }
 
   .numbers {
