@@ -2,12 +2,13 @@
   background-color: white;
   height: 1000px;
 
-  @media (max-width: 700px) {
-    height: 1500px;
+  @media (max-width: 1100px) {
+    height: auto;
   }
 
   .container {
     @extend %maincontainer;
+    padding-bottom: 20px;
 
     .textflex {
       margin-top: 130px;
