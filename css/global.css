@@ -523,6 +523,7 @@ header {
 .s-1 .container {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   z-index: 1;
 }
@@ -592,10 +593,9 @@ header {
   font-size: 35px;
   font-weight: 700;
 }
-@media (max-width: 500px) {
+@media (max-width: 1100px) {
   .s-1 .container h3 {
-    width: 200px;
-    font-size: 20px;
+    width: 300px;
   }
 }
 .s-1 .container button {
