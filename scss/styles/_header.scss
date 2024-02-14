@@ -37,18 +37,17 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    // position: fixed;
 
     .logo {
       display: flex;
       padding: 28px 0 0 28px;
 
-      @media (max-width: 300px) {
-        padding-left: 0px;
-      }
-
       @media (max-width: 1050px) {
         padding-left: 10px;
+      }
+
+      @media (max-width: 300px) {
+        padding-left: 0px;
       }
 
       img,
@@ -60,7 +59,7 @@ header {
           #018394 83.33%
         );
 
-        @media (max-width: 300px) {
+        @media (max-width: 500px) {
           background: none;
         }
       }

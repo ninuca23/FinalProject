@@ -47,6 +47,8 @@
         font-size: 14px;
         font-family: $dmfont;
         font-weight: 100;
+        opacity: 1;
+        transition: opacity 0.4s;
       }
 
       input:focus {
@@ -54,6 +56,9 @@
         border-color: #dce8f2;
       }
 
+      input:focus::placeholder {
+        opacity: 0;
+      }
       textarea {
         height: 100px;
         border: dashed;
