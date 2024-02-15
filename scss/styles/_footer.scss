@@ -3,6 +3,9 @@ footer {
   background-color: #010a20;
   display: flex;
 
+  @media (max-width: 500px) {
+    height: auto;
+  }
   .footercontainer {
     max-width: 1400px;
     width: 100%;

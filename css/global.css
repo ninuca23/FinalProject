@@ -143,13 +143,17 @@ a {
   text-decoration: none;
 }
 
-.s-7 .container, .s-6 .container, .s-5 .container, .s-4 .container, .s-3 .container, .s-2 .container, .s-1 .container {
+* {
+  scroll-behavior: smooth;
+}
+
+.contact .container, .s-7 .container, .s-6 .container, .s-5 .container, .s-4 .container, .s-3 .container, .s-2 .container, .s-1 .container {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto;
 }
 @media (max-width: 1400px) {
-  .s-7 .container, .s-6 .container, .s-5 .container, .s-4 .container, .s-3 .container, .s-2 .container, .s-1 .container {
+  .contact .container, .s-7 .container, .s-6 .container, .s-5 .container, .s-4 .container, .s-3 .container, .s-2 .container, .s-1 .container {
     width: 90%;
   }
 }
@@ -245,7 +249,12 @@ header {
   gap: 50px;
   margin-top: 8px;
 }
-@media (max-width: 950px) {
+@media (max-width: 1100px) {
+  .headercontainer .navbar ul {
+    gap: 20px;
+  }
+}
+@media (max-width: 850px) {
   .headercontainer .navbar ul {
     display: none;
   }
@@ -256,14 +265,19 @@ header {
   font-size: 20px;
   font-weight: 700;
 }
+@media (max-width: 1000px) {
+  .headercontainer .navbar a {
+    font-size: 15px;
+  }
+}
 .headercontainer .navbar .rightnav {
   display: flex;
   margin-top: 18px;
   gap: 40px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .headercontainer .navbar .rightnav {
-    gap: 20px;
+    gap: 10px;
   }
 }
 @media (max-width: 300px) {
@@ -377,6 +391,7 @@ header {
   color: #fff;
   transition: 0.5s;
   cursor: pointer;
+  border: none;
   letter-spacing: 0.1em;
   font-size: 15px;
   margin-top: 40px;
@@ -593,9 +608,16 @@ header {
   font-size: 35px;
   font-weight: 700;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1050px) {
   .s-1 .container h3 {
-    width: 300px;
+    width: 200px;
+    font-size: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .s-1 .container h3 {
+    width: 200px;
+    font-size: 20px;
   }
 }
 .s-1 .container button {
@@ -613,6 +635,7 @@ header {
   color: #fff;
   transition: 0.5s;
   cursor: pointer;
+  border: none;
 }
 @media (max-width: 900px) {
   .s-1 .container button {
@@ -713,6 +736,12 @@ header {
   font-size: 35px;
   font-weight: 700;
 }
+@media (max-width: 1050px) {
+  .s-2 h3 {
+    width: 200px;
+    font-size: 30px;
+  }
+}
 @media (max-width: 500px) {
   .s-2 h3 {
     width: 200px;
@@ -734,6 +763,7 @@ header {
   color: #fff;
   transition: 0.5s;
   cursor: pointer;
+  border: none;
 }
 @media (max-width: 900px) {
   .s-2 button {
@@ -1010,6 +1040,7 @@ header {
   color: #fff;
   transition: 0.5s;
   cursor: pointer;
+  border: none;
 }
 .s-4 .container .text button:hover {
   background-color: #be5466;
@@ -1301,6 +1332,7 @@ header {
   color: #fff;
   transition: 0.5s;
   cursor: pointer;
+  border: none;
   width: 300px;
 }
 @media (max-width: 400px) {
@@ -1317,6 +1349,11 @@ footer {
   height: 136px;
   background-color: #010a20;
   display: flex;
+}
+@media (max-width: 500px) {
+  footer {
+    height: auto;
+  }
 }
 footer .footercontainer {
   max-width: 1400px;
@@ -1375,4 +1412,329 @@ footer .copyright p {
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
+}
+
+body {
+  background-image: url(../images/ifan-bima-B04Xpnu5JQ4-unsplash\ 1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1400px) {
+  body {
+    background-size: cover;
+  }
+}
+@media (max-width: 900px) {
+  body {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.myheadercontainer {
+  display: flex;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 800px) {
+  .myheadercontainer {
+    width: 99%;
+  }
+}
+@media (max-width: 390px) {
+  .myheadercontainer {
+    width: 99%;
+  }
+}
+@media (max-width: 300px) {
+  .myheadercontainer {
+    width: 99%;
+  }
+}
+.myheadercontainer .mynavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
+.myheadercontainer .mynavbar .mylogo {
+  display: flex;
+  padding: 28px 0 0 28px;
+}
+@media (max-width: 1050px) {
+  .myheadercontainer .mynavbar .mylogo {
+    padding-left: 10px;
+  }
+}
+@media (max-width: 300px) {
+  .myheadercontainer .mynavbar .mylogo {
+    padding-left: 0px;
+  }
+}
+.myheadercontainer .mynavbar p {
+  font-family: "DM Sans", sans-serif;
+  width: 123px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1;
+}
+@media (max-width: 300px) {
+  .myheadercontainer .mynavbar p {
+    width: 80px;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}
+.myheadercontainer .mynavbar ul {
+  display: flex;
+  gap: 50px;
+  margin-top: 8px;
+}
+@media (max-width: 950px) {
+  .myheadercontainer .mynavbar ul {
+    display: none;
+  }
+}
+.myheadercontainer .mynavbar a {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.myheadercontainer .mynavbar .rightnav {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 800px) {
+  .myheadercontainer .mynavbar .rightnav {
+    gap: 20px;
+  }
+}
+@media (max-width: 300px) {
+  .myheadercontainer .mynavbar .rightnav {
+    gap: 20px;
+  }
+}
+
+.mycontainer {
+  padding: 100px 0;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .mycontainer {
+    width: 90%;
+  }
+}
+.mycontainer img {
+  height: 300px;
+  border-radius: 10px;
+}
+.mycontainer .mycol {
+  transition: 1s;
+  display: flex;
+  flex-wrap: wrap;
+  transition: 1s;
+}
+@media (max-width: 800px) {
+  .mycontainer .mycol {
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  .mycontainer .mycol {
+    width: 90%;
+  }
+}
+.mycontainer .mycard {
+  width: 350px;
+  background-color: #dce8f2;
+  cursor: pointer;
+  transition: 1s;
+}
+@media (max-width: 400px) {
+  .mycontainer .mycard {
+    width: 250px;
+  }
+}
+.mycontainer .mycard h5 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.mycontainer .mycard p {
+  font-family: "DM Sans", sans-serif;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #6f7787;
+  text-align: center;
+}
+.mycontainer .mycard .myfooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mycontainer .mycard .myfooter button {
+  background-color: #dd2242;
+  display: flex;
+  width: 150px;
+  padding: 15px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  border-radius: 211px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+  border: none;
+}
+@media (max-width: 800px) {
+  .mycontainer .mycard .myfooter button {
+    gap: 0;
+    font-size: 10px;
+  }
+}
+.mycontainer .mycard .myfooter button:hover {
+  background-color: #be5466;
+  transition: 0.5s;
+}
+.mycontainer .mycard .myfooter :first-child {
+  color: red;
+  font-size: 40px;
+}
+@media (max-width: 800px) {
+  .mycontainer .mycard .myfooter :first-child {
+    font-size: 25px;
+  }
+}
+.mycontainer .mycard:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+.mycontainer .mycard:hover {
+  border: 3px solid red;
+  transition: 1s;
+}
+
+footer {
+  height: 136px;
+  background-color: #010a20;
+  display: flex;
+}
+footer .myfootercontainer {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+@media (max-width: 1000px) {
+  footer .myfootercontainer {
+    width: 90%;
+  }
+}
+@media (max-width: 1200px) {
+  footer .myfootercontainer {
+    width: 90%;
+  }
+}
+footer .mylogo {
+  display: flex;
+  align-items: center;
+}
+footer .mylogo ::first-line {
+  color: red;
+}
+footer .mylogo p {
+  width: 100px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+footer .list ul {
+  display: flex;
+  gap: 36px;
+}
+@media (max-width: 500px) {
+  footer .list ul {
+    gap: 15px;
+  }
+}
+footer .list ul a {
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  footer {
+    gap: 15px;
+  }
+}
+footer p {
+  color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.contact {
+  height: 200px;
+  background-color: #010a20;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1000px) {
+  .contact {
+    height: auto;
+  }
+}
+.contact .container .contacts {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+@media (max-width: 800px) {
+  .contact .container .contacts {
+    flex-direction: column;
+  }
+}
+.contact .container .contacts label {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.contact .container .contacts .mail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.contact .container .contacts .phone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.contact .container .contacts .location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.contact a {
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #e0e0e0;
 }/*# sourceMappingURL=global.css.map */

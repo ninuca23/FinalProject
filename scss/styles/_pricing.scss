@@ -1,0 +1,302 @@
+body {
+  background-image: url(../images/ifan-bima-B04Xpnu5JQ4-unsplash\ 1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (max-width: 1400px) {
+    background-size: cover;
+  }
+
+  @media (max-width: 900px) {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.myheadercontainer {
+  display: flex;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (max-width: 800px) {
+    width: 99%;
+  }
+
+  @media (max-width: 390px) {
+    width: 99%;
+  }
+
+  @media (max-width: 300px) {
+    width: 99%;
+  }
+
+  .mynavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+
+    .mylogo {
+      display: flex;
+      padding: 28px 0 0 28px;
+
+      @media (max-width: 1050px) {
+        padding-left: 10px;
+      }
+
+      @media (max-width: 300px) {
+        padding-left: 0px;
+      }
+    }
+
+    p {
+      font-family: $dmfont;
+      width: 123px;
+      color: $white;
+      font-size: 20px;
+      font-weight: 900;
+      line-height: 1;
+
+      @media (max-width: 300px) {
+        width: 80px;
+        font-size: 20px;
+        margin-right: 10px;
+      }
+    }
+
+    ul {
+      display: flex;
+      gap: 50px;
+      margin-top: 8px;
+
+      @media (max-width: 950px) {
+        display: none;
+      }
+    }
+
+    a {
+      font-family: $roboto;
+      color: $white;
+      font-size: 20px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .rightnav {
+      display: flex;
+      gap: 20px;
+
+      @media (max-width: 800px) {
+        gap: 20px;
+      }
+
+      @media (max-width: 300px) {
+        gap: 20px;
+      }
+    }
+  }
+}
+
+.mycontainer {
+  padding: 100px 0;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (max-width: 1200px) {
+    width: 90%;
+  }
+
+  img {
+    height: 300px;
+    border-radius: 10px;
+  }
+
+  .mycol {
+    transition: 1s;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 1s;
+
+    @media (max-width: 800px) {
+      justify-content: center;
+    }
+
+    @media (max-width: 800px) {
+      width: 90%;
+    }
+  }
+
+  .mycard {
+    width: 350px;
+    background-color: #dce8f2;
+    cursor: pointer;
+    transition: 1s;
+
+    @media (max-width: 400px) {
+      width: 250px;
+    }
+
+    h5 {
+      font-family: $roboto;
+      text-align: center;
+    }
+    p {
+      font-family: $dmfont;
+      @include paragraphdark;
+      text-align: center;
+    }
+
+    .myfooter {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      button {
+        @include redbutton;
+
+        @media (max-width: 800px) {
+          gap: 0;
+          font-size: 10px;
+        }
+      }
+      button:hover {
+        @include buttonhover;
+      }
+
+      :first-child {
+        color: red;
+        font-size: 40px;
+
+        @media (max-width: 800px) {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  .mycard:hover {
+    transform: scale(1.1);
+    transition: 1s;
+  }
+  .mycard:hover {
+    border: 3px solid red;
+    transition: 1s;
+  }
+}
+
+footer {
+  height: 136px;
+  background-color: #010a20;
+  display: flex;
+
+  .myfootercontainer {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @media (max-width: 1000px) {
+      width: 90%;
+    }
+
+    @media (max-width: 1200px) {
+      width: 90%;
+    }
+  }
+
+  .mylogo {
+    display: flex;
+    align-items: center;
+    ::first-line {
+      color: red;
+    }
+    p {
+      width: 100px;
+      color: white;
+      font-family: $roboto;
+    }
+  }
+  .list ul {
+    display: flex;
+    gap: 36px;
+    @media (max-width: 500px) {
+      gap: 15px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  @media (max-width: 500px) {
+    gap: 15px;
+  }
+  p {
+    color: #ffffff;
+    font-family: $dmfont;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+.contact {
+  height: 200px;
+  background-color: #010a20;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 1000px) {
+    height: auto;
+  }
+
+  .container {
+    @extend %maincontainer;
+
+    .contacts {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px 0;
+
+      @media (max-width: 800px) {
+        flex-direction: column;
+      }
+
+      label {
+        font-family: $roboto;
+        font-size: 20px;
+        font-weight: 700;
+        color: $white;
+      }
+      .mail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .location {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    @include paragraphs;
+  }
+}
