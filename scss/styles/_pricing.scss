@@ -1,7 +1,7 @@
-body {
-  background-image: url(../images/ifan-bima-B04Xpnu5JQ4-unsplash\ 1.png);
-  background-size: cover;
+.pricing {
+  background-image: url(../../images/ifan-bima-B04Xpnu5JQ4-unsplash\ 1.png);
   background-repeat: no-repeat;
+  background-size: cover;
 
   @media (max-width: 1400px) {
     background-size: cover;
@@ -40,6 +40,10 @@ body {
     .mylogo {
       display: flex;
       padding: 28px 0 0 28px;
+
+      img {
+        height: 40px;
+      }
 
       @media (max-width: 1050px) {
         padding-left: 10px;

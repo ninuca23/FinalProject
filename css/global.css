@@ -1414,18 +1414,18 @@ footer .copyright p {
   font-weight: 700;
 }
 
-body {
-  background-image: url(../images/ifan-bima-B04Xpnu5JQ4-unsplash\ 1.png);
-  background-size: cover;
+.pricing {
+  background-image: url(../../images/ifan-bima-B04Xpnu5JQ4-unsplash\ 1.png);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 @media (max-width: 1400px) {
-  body {
+  .pricing {
     background-size: cover;
   }
 }
 @media (max-width: 900px) {
-  body {
+  .pricing {
     background-size: cover;
     background-position: center;
   }
@@ -1461,6 +1461,9 @@ body {
 .myheadercontainer .mynavbar .mylogo {
   display: flex;
   padding: 28px 0 0 28px;
+}
+.myheadercontainer .mynavbar .mylogo img {
+  height: 40px;
 }
 @media (max-width: 1050px) {
   .myheadercontainer .mynavbar .mylogo {
